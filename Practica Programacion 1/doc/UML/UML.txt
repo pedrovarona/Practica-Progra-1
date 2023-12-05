@@ -1,0 +1,51 @@
+@startuml
+!theme blueprint
+class src.main.Main {
+  + main(args: String[]): void
+}
+class src.dominio.Lista {
+  - productos: ArrayList
+  + agregarProducto(producto: Producto): void
+  + eliminarProducto(codigo: String): void
+  + listarProductos(): void
+}
+class src.dominio.Producto {
+  - nombremodelo: String
+  - precio: double
+  - tamano: double
+  - codigo: String
+  + getNombremodelo(): String
+  + setNombremodelo(nombremodelo: String): void
+  + getPrecio(): double
+  + setPrecio(precio: double): void
+  + getTamano(): double
+  + setTamano(tamano: double): void
+  + getCodigo(): String
+  + setCodigo(codigo: String): void
+  + toString(): String
+}
+class src.interfaz.Interfaz {
+  + scanner: Scanner
+  + listaProductos: Lista
+  + iniciar(): void
+}
+
+
+!theme blueprint
+annotation java.lang.Override
+class java.util.ArrayList
+class java.util.Scanner
+class java.util.UUID
+class src.dominio.Lista
+class src.dominio.Producto
+class src.interfaz.Interfaz
+class src.main.Main
+interface java.io.Serializable
+src.dominio.Lista ..> java.util.ArrayList
+src.dominio.Lista --|> java.io.Serializable
+src.dominio.Producto ..> java.lang.Override
+src.dominio.Producto ..> java.util.UUID
+src.dominio.Producto --|> java.io.Serializable
+src.interfaz.Interfaz ..> java.util.Scanner
+src.main.Main ..> src.interfaz.Interfaz
+@enduml
