@@ -29,6 +29,7 @@ make completo
 ```
 
 ## UML
+![DiagramaUML](https://github.com/pedrovarona/Practica-Progra-1/assets/121907021/dc82523b-71f0-403c-97b8-86bd4293a329)
 
 ## Manifest
 
