@@ -12,4 +12,5 @@ javadoc:
 	find $(SOURCE_DIR) -name "*.java" | xargs javadoc -d doc/javadoc
 run:
 	java -jar $(fichJar)
-completo:jar javadoc run
+
+completo: jar javadoc run
