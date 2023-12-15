@@ -10,7 +10,7 @@ El proyecto está organizado en tres paquetes principales:
 
 2. **src.interfaz:** Incluye la clase `Interfaz` que gestiona la interacción con el usuario y proporciona un menú para realizar diversas operaciones en el catálogo de productos.
 
-3. **src.dominio:** Contiene las clases `Producto` y `Lista`. La clase `Producto` representa un artículo en el catálogo, mientras que la clase `Lista` gestiona una colección de productos, permitiendo operaciones como agregar, eliminar y listar.
+3. **src.dominio:** Contiene las clases `ProductoApple`, `Iphone`, `Ipad`, `AirPods` y `Lista`. La clase `Producto` representa un artículo en el catálogo, mientras que la clase `Lista` gestiona una colección de productos, permitiendo operaciones como agregar, eliminar y listar. Las clases `AirPods`, `Iphone` y `Ipad` tienen herencia con `ProductoApple` la cual es la clase padre.
 
 ## Makefile
 
